@@ -28,7 +28,7 @@ class GG_Custom_Formats {
 		add_shortcode( 'see', array($this,"recommend") );
 		add_shortcode( 'ggcte', array($this,"cte_button") );
 		add_action( 'customize_register', array($this,'customizer') );
-		add_action( 'wp_head', array($this,'set_css'));
+		//add_action( 'wp_head', array($this,'set_css'));
                 add_filter('tiny_mce_before_init',array($this,'setup_styles'));
 		add_filter( 'mce_buttons', array($this, 'register_tmce_buttons') );
                 add_filter('admin_init', array($this,'set_editor_styles'));
