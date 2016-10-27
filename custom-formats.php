@@ -53,6 +53,10 @@ class GG_Custom_Formats {
                     'title' => 'Okvir',
                     'block' => 'div',
                     'classes' => 'custom-frame'
+                ),
+                array (
+                    'title' => 'Drobno',
+                    'inline' => 'small',
                 )
                 
 	);
