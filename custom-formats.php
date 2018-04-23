@@ -32,7 +32,7 @@ class GG_Custom_Formats {
         add_filter('tiny_mce_before_init',array($this,'setup_styles'));
 		add_filter( 'mce_buttons', array($this, 'register_tmce_buttons') );
         add_filter('admin_init', array($this,'set_editor_styles'));
-        //add_action( 'init',array($this,'register_string'));
+        add_action( 'admin_init',array($this,'register_string'));
 	}
 
 	public function register_string() {
